@@ -1,0 +1,92 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+}
+.mobmenu{
+    display: none;
+}
+.navbar{
+    background-color: chartreuse;
+    position: sticky;
+    top: 0;
+    padding: 1.5%;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    text-decoration:none; 
+}
+#about{
+    margin-top: 10%;
+    text-align: center;
+}
+#education{
+    margin-top: 10%;
+    text-align: center;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+}
+#skill{
+    text-align: center;
+    margin-top: 10%;
+}
+.s-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+#project{
+    text-align: center;
+    margin-top: 10%;
+}
+.p-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+    border: 2px solid chartreuse;
+}
+#contact a{
+    color: white;
+    text-decoration:none; 
+}
+#contact{
+    text-align: center;
+    margin-top: 10%;
+}
+@media  screen and (max-width:500px) {
+    .hidden{
+        display: none;
+    }
+    .mobmenu{
+        display: unset;
+    }
+    .menu{
+        display: none;
+    }
+    .drop a{
+        text-decoration:none; 
+    }
+    .icon{
+        font-size: 5vh;
+        padding: 3%;
+    }
+    .card{
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .p-flex{
+        flex-direction: column;
+        justify-content: unset;
+    }
+}
